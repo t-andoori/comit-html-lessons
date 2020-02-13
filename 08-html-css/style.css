@@ -1,0 +1,17 @@
+a:hover {
+}
+
+.search-engine {
+  display: inline;
+  text-align: right;
+}
+.headcontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
