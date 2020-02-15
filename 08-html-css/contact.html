@@ -12,10 +12,28 @@
     </h1>
     <div class="headcontainer">
       <h1>Tanisha's Portfolio</h1>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="contact.html">About</a>
-      </nav>
+      <a class="page-link" href="index.html">Home</a>
+      <a class="page-link" href="about.html">About</a>
     </div>
+    <hr />
+    <form action="contact-success.html" method="GET">
+      <input
+        class="box-size"
+        type="text"
+        name="name"
+        placeholder="Name"
+        size="50"
+        required
+      /><br />
+      <input
+        type="email"
+        name="email"
+        placeholder="Email"
+        size="50"
+        required
+      /><br />
+      <textarea placeholder="Message"></textarea>
+      <input type="submit" value="Send!" />
+    </form>
   </body>
 </html>

@@ -1,4 +1,14 @@
+.page-link {
+  color: black;
+  font-size: 25px;
+  text-decoration: none;
+}
+
 a:hover {
+  color: palevioletred;
+}
+a.visited {
+  color: palevioletred;
 }
 
 .search-engine {
@@ -14,4 +24,9 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+textarea {
+  width: 300px;
+  height: 150px;
 }

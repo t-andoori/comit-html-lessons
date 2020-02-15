@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    .box-row {
+      width: 100px;
+      height: 100px;
+      border: 1px black dashed;
+      display: flex;
+      flex-direction: row;
+      justify-content: center; /*left to right*/
+      align-items: center;
+    } /*vertical up and down*/
+
+    .box-column {
+      width: 100px;
+      height: 100px;
+      border: 1px black dashed;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .header {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .main-context {
+      display: flex;
+    }
+    article {
+      height: 100px;
+      width: 100px;
+      background-color: pink;
+      margin: left;
+    }
+  </style>
+
+  <body>
+    <div class="main-content">
+      <article></article>
+      <article></article>
+      <article></article>
+    </div>
+    <header><h1>Our Website</h1></header>
+    <div class="box-row">text</div>
+    <div class="box-column">text</div>
+  </body>
+</html>
