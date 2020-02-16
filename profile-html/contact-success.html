@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact-Success</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <style>
+    .item1 {
+      grid-area: photo;
+    }
+    .item2 {
+      grid-area: header;
+    }
+    .item3 {
+      grid-area: home-page;
+    }
+    .item4 {
+      grid-area: about-page;
+    }
+    .item5 {
+      grid-area: form-sent;
+    }
+    .item6 {
+      grid-area: filler;
+    }
+    .grid-container {
+      display: grid;
+      grid-template-rows:
+        "photo header header home-page about-page"
+        "form-sent form-sent form-sent form-sent form-sent";
+      grid-gap: 5px;
+      padding: 5px;
+    }
+
+    .grid-container > div {
+      text-align: center;
+      padding: 5px;
+    }
+  </style>
+  <body>
+    <div class="grid-container">
+      <div class="item1">
+        <img src="IMG_3294.JPG" width="10%" height="10%" />
+      </div>
+      <div class="item2">
+        Tanisha's Portfolio
+      </div>
+
+      <div class="item3"><a href="index.html">Home</a></div>
+      <div class="item4">
+        <a class="page-link" href="about.html">About</a>
+      </div>
+
+      <div class="form-sent, contact-sent">
+        Contact Form Sent!
+        <p>Thank you for reaching out!</p>
+      </div>
+    </div>
+  </body>
+</html>
