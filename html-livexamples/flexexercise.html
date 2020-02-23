@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Attempt #idk</title>
+
+    <style>
+      .header {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid black;
+      }
+      .container {
+        display: flex;
+      }
+      .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        flex: 3;
+      }
+      sidebar {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid black;
+        width: 150px;
+      }
+      .articles {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 250px;
+      }
+      .article {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        margin: 5px 5px;
+        padding: 5px 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <img src="https://picsum.photos/250" alt="icon" width="5%" />
+      <h1>Some Great Title</h1>
+      <img src="https://picsum.photos/250" alt="icon" width="5%" />
+    </header>
+    <main class="container">
+      <sidebar
+        ><h3>Navigation</h3>
+        <a href="facebook.html">Facebook exercise</a>
+        <a href="flexbox.html">Flexbox</a>
+        <a href="flexbox2.html">Flexbox Two</a>
+      </sidebar>
+      <content class="main">
+        <h2>Header of the article contents</h2>
+        <div><p>paragraph of how amazing our articles are and why</p></div>
+
+        <div class="articles">
+          <article class="article">
+            <h3>Article Header</h3>
+            <img src="https://picsum.photos/250" />
+            <p>hello article</p>
+          </article>
+          <article class="article">
+            <h3>article header</h3>
+            <img src="https://picsum.photos/250" />
+            <p>oh hello</p>
+          </article>
+          <article class="article">
+            <h3>header article</h3>
+            <img src="https://picsum.photos/250" />
+            <p>yes, hello</p>
+          </article>
+          <article class="article">
+            <h3>header article</h3>
+            <img src="https://picsum.photos/250" />
+            <p>yes, hello</p>
+          </article>
+        </div></content
+      >
+    </main>
+  </body>
+</html>
