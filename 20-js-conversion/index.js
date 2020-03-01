@@ -4,6 +4,8 @@ let ageInput = document.getElementById("ageInput");
 let completed = document.getElementById("schoolYes");
 let progress = document.getElementById("schoolNo");
 let submit = document.getElementById("inputSubmit");
+let finalScore = document.getElementById("score");
+
 console.log(
   `User Demographics: ${"FIRST NAME: " +
     firstName.value +
@@ -21,6 +23,7 @@ function declaration() {
     console.log("You're a big, fat phony!");
   }
 }
+
 // Alex's help
 // submit.addEventListener('click', declaration);
 // function declaration() {
