@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>TheSumOf</h1>
+    <input placeholder="digit" type="text" id="firstNumber" />
+    +
+    <input placeholder="digit" type="text" id="secondNumber" />
+    +
+    <input placeholder="digit" type="text" id="thirdNumber" />
+    +
+    <input placeholder="digit" type="text" id="fourthNumber" />
+
+    <button id="calculate">Calculate</button>
+
+    <div>Answer: <span id="answer"></span></div>
+
+    <script>
+      let numberOne = document.getElementById("firstNumber");
+      let numberTwo = document.getElementById("secondNumber");
+      let numberThree = document.getElementById("thirdNumber");
+      let numberFour = document.getElementById("fourthNumber");
+      let button = document.getElementById("calculate");
+      let answer = document.getElementById("answer");
+      function sumOf() {
+        let result =
+          Number(numberOne.value) +
+          Number(numberTwo.value) +
+          Number(numberThree.value) +
+          Number(numberFour.value);
+        answer.innerHTML = result;
+      }
+
+      button.addEventListener("click", sumOf);
+    </script>
+  </body>
+</html>
