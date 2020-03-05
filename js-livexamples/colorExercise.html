@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        height: 100px;
+        width: 100px;
+        border: 2px solid black;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box" id="box"></div>
+
+    <label>Color:</label>
+    <input type="color" id="colorPick" />
+    <button id="setButton">Set</button>
+
+    <script>
+      //referencing UI elements
+      let box = document.getElementById("box");
+      let colorPick = document.getElementById("colorPick");
+      let setButton = document.getElementById("setButton");
+      //Do functions to set color
+      function setColor() {
+        console.log(colorPick.value);
+        box.style.background = colorPick.value;
+      }
+      setButton.addEventListener("click", setColor);
+    </script>
+  </body>
+</html>

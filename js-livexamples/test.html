@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      .container {
+        width: 100px;
+        height: 100px;
+        margin: 100px 10px;
+        border: 2px solid black;
+      }
+      .qwe {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .set {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="qwe">
+      <div onclick="containerColor1()" id="con1" class="container"></div>
+      <div onclick="containerColor2()" id="con2" class="container"></div>
+      <div onclick="containerColor3()" id="con3" class="container"></div>
+    </div>
+    <div class="set">
+      <input type="color" name="" id="color" />
+      <button id="setBtn" onclick="setColor()">Set</button>
+    </div>
+    <script>
+      let con1 = document.getElementById("con1");
+      let con2 = document.getElementById("con2");
+      let con3 = document.getElementById("con3");
+      let conn1 = document.getElementsByClassName("container");
+      let color = document.getElementById("color");
+      let btnSet = document.getElementById("btnSet");
+      let containerColor1 = () => {
+        con1.style.border = "dotted";
+        con2.style.border = "solid";
+        con3.style.border = "solid";
+      };
+      let containerColor2 = () => {
+        con2.style.border = "dotted";
+        con1.style.border = "solid";
+        con3.style.border = "solid";
+      };
+      let containerColor3 = () => {
+        con3.style.border = "dotted";
+        con1.style.border = "solid";
+        con2.style.border = "solid";
+      };
+      let setColor = () => {
+        let colors = color.value;
+        if (con1.style.border == "dotted") {
+          con1.style.background = colors;
+        } else if (con2.style.border == "dotted") {
+          con2.style.background = colors;
+        } else {
+          con3.style.background = colors;
+        }
+      };
+    </script>
+  </body>
+</html>
