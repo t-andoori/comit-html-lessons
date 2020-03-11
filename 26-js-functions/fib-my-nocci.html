@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function calcFib(maxCalc) {
+        const fibSequence = [0, 1];
+
+        if (maxCalc == 1) {
+          return fibSequence;
+        }
+        for (let i = 1; i < maxCalc; i++) {
+          fibSequence.push(
+            fibSequence[fibSequence.length - 1] + fibSequence[fibSequence - 2]
+          );
+        }
+        return fibSequence;
+      }
+
+      //   function calculateFibonacci(maxCalculations) {
+      //     const fibonacciSequence = [0, 1]; //length 2
+      //     if (maxCalculations == 1) {
+      //       return fibonacciSequence;
+      //     }
+      //     for (let i = 0; i < maxCalculations; i++) {
+      //       let lastIndex = fibonacciSequence.length - 1; //1
+      //       let secondLastIndex = fibonacciSequence.length - 2; //0
+      //       let lastValue = fibonacciSequence[lastIndex];
+      //       let secondLastValue = fibonacciSequence[secondLastIndex];
+      //       let result = lastValue + secondLastValue;
+      //       fibonacciSequence.push(result);
+      //     }
+      //     return fibonacciSequence;
+      //   }
+
+      //   function calculateFibonacci(maxCalculations) {
+      //           const fibonacciSequence = [0, 1]; //length 2
+      //           for (let i = 0; i < maxCalculations; i++) {
+      //             fibonacciSequence.push(
+      //               fibonacciSequence[fibonacciSequence.length - 1] +
+      //                 fibonacciSequence[fibonacciSequence.length - 2]
+      //             );
+      //           }
+      //           return fibonacciSequence;
+      //         }
+    </script>
+  </body>
+</html>
